@@ -7,5 +7,75 @@
     <title>FWB SignUp</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- pic(unsplash.com/@heftiba) by Toa heftiba on unsplash -->
+    <div class="left-container">
+      <img src="./img/friends group 2.jpg" alt="friends-group-pic" />
+      <div class="teen-titans-container">
+        <p>TEEN TITANS</p>
+      </div>
+    </div>
+    <div class="right-container">
+      <header>
+        <p>Fill in the form to become part of the team.</p>
+      </header>
+
+      <form action="" method="get" class="form-row">
+        <p class="error-insight">
+          <i> Note: Input border turn green if filled correctly</i
+          ><span>*</span>
+        </p>
+        <div class="input-container">
+          <input
+            type="text"
+            name="full-name"
+            id="full-name"
+            placeholder="Full Name"
+            title="input your full name"
+            minlength="5"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="number"
+            name="phone"
+            id="phone"
+            placeholder="Phone Number"
+            required
+          />
+          <input
+            type="password"
+            name="pass1"
+            id="pass1"
+            placeholder="Password"
+            maxlength="13"
+            minlength="8"
+            required
+          />
+          <input
+            type="password"
+            name="pass2"
+            id="pass2"
+            maxlength="13"
+            minlength="8"
+            placeholder="Confirm password"
+            required
+          />
+          <div class="error-box"></div>
+          <div class="btn-container">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+          <p class="log-in">Already have a member? <a href="#">Log in</a></p>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
