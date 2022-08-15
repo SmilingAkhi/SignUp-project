@@ -12,10 +12,7 @@ function validatePass() {
   const passValue2 = pass2.value;
 
   if (passValue1 !== passValue2) {
-    // alert("confirm password do not match");
     errorDisplay.textContent = "password does not match";
-    preventDefault();
     pass2.classList.add("error");
-  }
-  console.log(passValue);
+  } else pass2.classList.add("pass");
 }
